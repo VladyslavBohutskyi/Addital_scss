@@ -1,0 +1,28 @@
+.image-with-text{
+  margin-top: 150px;
+  &__wrapper{
+    width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img{
+    flex-basis: 30%;
+    img{
+      width: 100%;
+    }
+  }
+  &__text{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    h2{
+      text-transform: capitalize;
+    }
+    p{
+      color: $brand-text;
+    }
+    
+  }
+}

@@ -1,0 +1,57 @@
+.banner {
+  display: grid;
+  grid-template-areas:
+    'span banner__img'
+    'banner__title banner__img'
+    'banner__content banner__img'
+    'banner__statistics banner__img'
+  ;
+  grid-gap: 10px;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 3% 27% 45% 25%;
+
+  &__item {
+    height: 100%;
+  }
+
+  &__title {
+    grid-area: banner__title;
+    width: 50%;
+  }
+
+  &__content {
+    grid-area: banner__content;
+    width: 60%;
+    color: $brand-text;
+  }
+
+  &__statistics {
+    grid-area: banner__statistics;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    color: $brand-text;
+
+    p:first-child {
+      color: $brand-orange;
+    }
+
+    &-btn {
+      button {
+        background-color: $brand-blue-light;
+        color: black;
+      }
+    }
+  }
+
+  &__img {
+    grid-area: banner__img;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+}

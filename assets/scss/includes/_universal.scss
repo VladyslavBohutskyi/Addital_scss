@@ -1,0 +1,36 @@
+body{
+  background-color: #01020A;
+  .body_wrapper{
+    max-width: 1900px;
+    margin: auto;
+  }
+  .container{
+    max-width: 1640px;
+    margin: auto;
+    padding: 0 15px;
+  }
+}
+
+.btn{
+  background-color: $brand-purple;
+  color: #FFFFFF;
+  padding: 18px 55px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  letter-spacing: 0.05rem;
+  line-height: 27px;
+  text-transform: capitalize;
+  &:hover{
+    color: black;
+    opacity: 0.8;
+  }
+}
+
+.orange_span {
+  color: $brand-orange;
+  text-transform: capitalize;
+  font-size: 12px;
+}
