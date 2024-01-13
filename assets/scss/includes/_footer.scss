@@ -1,0 +1,24 @@
+.footer__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 30px auto;
+    a {
+        color: white;
+    }
+    i{
+        display: block;
+        font-size: 30px;
+    }
+}
+.footer__bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5%;
+    border-top: 1px solid #1B2B2B;
+    @media (max-width: 700px){
+        display: block;
+        text-align: center;
+    }
+}
